@@ -103,7 +103,7 @@ class AddNewMovieSearchResult extends Component {
                   <MoviePoster
                     className={styles.poster}
                     images={images}
-                    size={250}
+                    width={167}
                     overflow={true}
                   />
                 </div>

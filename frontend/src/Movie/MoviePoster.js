@@ -15,11 +15,13 @@ function MoviePoster(props) {
 }
 
 MoviePoster.propTypes = {
-  size: PropTypes.number.isRequired
+  size: PropTypes.number.isRequired,
+  width: PropTypes.number
 };
 
 MoviePoster.defaultProps = {
-  size: 250
+  size: 250,
+  width: 167
 };
 
 export default MoviePoster;

@@ -120,6 +120,7 @@ class MovieImage extends Component {
       style,
       placeholder,
       size,
+      width,
       lazy,
       overflow
     } = this.props;
@@ -136,6 +137,7 @@ class MovieImage extends Component {
           className={className}
           style={style}
           src={placeholder}
+          width={width}
         />
       );
     }
@@ -151,6 +153,7 @@ class MovieImage extends Component {
               className={className}
               style={style}
               src={placeholder}
+              width={width}
             />
           }
         >
@@ -185,6 +188,7 @@ MovieImage.propTypes = {
   coverType: PropTypes.string.isRequired,
   placeholder: PropTypes.string.isRequired,
   size: PropTypes.number.isRequired,
+  width: PropTypes.number,
   lazy: PropTypes.bool.isRequired,
   overflow: PropTypes.bool.isRequired,
   onError: PropTypes.func,
